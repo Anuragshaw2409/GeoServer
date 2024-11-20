@@ -17,6 +17,8 @@ try {
       points:true
     }
   });
+  if(!fence)
+    return res.json({isInside:false});
   const array = [fence[0].points as []];
   
   var poly = turf.polygon(array);

@@ -46,6 +46,8 @@ exports.userRouter.post('/isinside', (req, res) => __awaiter(void 0, void 0, voi
                 points: true
             }
         });
+        if (!fence)
+            return res.json({ isInside: false });
         const array = [fence[0].points];
         var poly = turf.polygon(array);
         const isInside = (0, turf_1.booleanPointInPolygon)(points, poly);
