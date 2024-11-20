@@ -8,8 +8,8 @@ import { userRouter } from "./Router/user/Attendance";
 
 dbConnect();
 
-const app :Express= express();
-const PORT = 3000;
+export const app :Express= express();
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
