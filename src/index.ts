@@ -15,7 +15,7 @@ const PORT = 3000;
 app.use(express.json());
 app.use(
     cors({
-        origin: "*"
+        origin: "http://54.198.103.75:3000/"
     })
 );
 
