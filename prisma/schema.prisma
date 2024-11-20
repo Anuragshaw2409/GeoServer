@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgresql://Geo1_owner:Zg7hAKFcwld2@ep-shiny-glitter-a5g7wk1t.us-east-2.aws.neon.tech/Geo1?sslmode=require"
 }
 
 model Fences{

@@ -9,7 +9,7 @@ import { userRouter } from "./Router/user/Attendance";
 dbConnect();
 
 export const app :Express= express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // Middleware
 app.use(express.json());
